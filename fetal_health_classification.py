@@ -12,7 +12,6 @@ Original file is located at
 """
 
 import pandas as pd
-import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -549,7 +548,6 @@ smote_vs_coef
 
 # Random Forest classifier
 # We will be using 50 estimators and a max depth of 3
-
 rfc = RandomForestClassifier(random_state = 1, n_estimators = 50, max_depth = 3, n_jobs = -1, verbose = 1)
 rfc.fit(X_train, y_train)
 y_pred = rfc.predict(X_test)
